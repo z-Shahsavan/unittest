@@ -1,0 +1,15 @@
+
+Zahra@LORD c:\xampp\htdocs\UnitTest
+# phpunit
+PHPUnit 3.7.21 by Sebastian Bergmann.
+
+Configuration read from C:\xampp\htdocs\UnitTest\phpunit.xml
+
+................................
+
+Time: 61 ms, Memory: 4.00MB
+
+OK (32 tests, 32 assertions)
+
+Zahra@LORD c:\xampp\htdocs\UnitTest
+#
