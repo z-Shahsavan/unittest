@@ -9,15 +9,16 @@ class StatisticsTest extends \PHPUnit_Framework_TestCase
      * @param string $candidate String to be candidate of the sentence
      * @param int $count the number of candidates
      *
-     * @dataProvider providerTestEnterParamsReturnTrueSentence
+     * @dataProvider providerTestPrintGuessStatisticsArgs
+	 * @covers Statistics::printGuessStatistics
      */
-	public function testEnterParamsReturnTrueSentence($candidate,$count,$sentence){
+	public function testPrintGuessStatisticsEquals($candidate,$count,$sentence){
 		$statObj=new Statistics();
 		$result=$statObj->printGuessStatistics($candidate,$count);
 		$this->assertEquals($sentence,$result['result']);
 	}
 	
-	public function providerTestEnterParamsReturnTrueSentence()
+	public function providerTestPrintGuessStatisticsArgs()
     {
         return array(
             array('bird','1', 'There is 1 bird'),

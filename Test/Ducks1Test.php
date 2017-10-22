@@ -9,14 +9,14 @@ class Ducks1Test extends \PHPUnit_Framework_TestCase{
      * @param int $dockArrayIdx number which define duck type
      * @param string $dockInfoString String which is duck info
      *
-     * @dataProvider providerTestTrueDocksInfo
+     * @dataProvider providerTestDuckEmolatorArgs
+	 * @covers Ducks1::duckEmolator
      */
-	public function testTrueDocksInfo($dockArrayIdx,$dockInfoString){
+	public function testDuckEmolatorEquals($dockArrayIdx,$dockInfoString){
 		$dkarray=Ducks1::duckEmolator();
-		//$this->assertEquals($dkarray[$dockArrayIdx],$dockInfoString);
-		$this->assertEquals(dockInfoString,$dkarray[$dockArrayIdx]);
+		$this->assertEquals($dockInfoString,$dkarray[$dockArrayIdx]);
 	}
-	public function providerTestTrueDocksInfo()
+	public function providerTestDuckEmolatorArgs()
     {
         return array(
             array('0', 'Mallard_Duck says: Quack! Quack! And is flying'),

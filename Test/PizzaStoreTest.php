@@ -9,15 +9,15 @@ class PizzaStoreTest extends \PHPUnit_Framework_TestCase
      * @param int $pizzaType number to define type of pizza
      * @param int $arrayIdx index of the pizza array info
      *
-     * @dataProvider providerTestEnterParams
+     * @dataProvider providerTestOrderPizzaArgs
+	 * @covers PizzaStore::orderPizza
      */
-	public function testEnterParamsReturnTruePizzaInfo($pizzaType,$arrayIdx,$expectedString)
+	public function testOrderPizzaEquals($pizzaType,$arrayIdx,$expectedString)
 	{
 		$p=PizzaStore::orderPizza($pizzaType);
-		//$this->assertEquals($p[$arrayIdx],$expectedString);
 		$this->assertEquals($expectedString,$p[$arrayIdx]);
 	}
-	public function providerTestEnterParams()
+	public function providerTestOrderPizzaArgs()
     {
         return array(
             array('0','0', 'Chesse pizza is prepared'),
