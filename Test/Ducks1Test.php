@@ -13,7 +13,8 @@ class Ducks1Test extends \PHPUnit_Framework_TestCase{
      */
 	public function testTrueDocksInfo($dockArrayIdx,$dockInfoString){
 		$dkarray=Ducks1::duckEmolator();
-		$this->assertEquals($dkarray[$dockArrayIdx],$dockInfoString);
+		//$this->assertEquals($dkarray[$dockArrayIdx],$dockInfoString);
+		$this->assertEquals(dockInfoString,$dkarray[$dockArrayIdx]);
 	}
 	public function providerTestTrueDocksInfo()
     {

@@ -14,7 +14,8 @@ class PizzaStoreTest extends \PHPUnit_Framework_TestCase
 	public function testEnterParamsReturnTruePizzaInfo($pizzaType,$arrayIdx,$expectedString)
 	{
 		$p=PizzaStore::orderPizza($pizzaType);
-		$this->assertEquals($p[$arrayIdx],$expectedString);
+		//$this->assertEquals($p[$arrayIdx],$expectedString);
+		$this->assertEquals($expectedString,$p[$arrayIdx]);
 	}
 	public function providerTestEnterParams()
     {

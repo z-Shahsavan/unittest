@@ -14,7 +14,7 @@ class Ducks0Test extends \PHPUnit_Framework_TestCase
 	public function testTrueDocksInfo($dockArrayIdx,$dockInfoString){
 		
 		$dkarray=DuckEmolator::home();
-		$this->assertEquals($dkarray[$dockArrayIdx],$dockInfoString);
+		$this->assertEquals($dockInfoString,$dkarray[$dockArrayIdx]);
 	}
 	public function providerTestTrueDocksInfo()
     {

@@ -14,7 +14,7 @@ class StatisticsTest extends \PHPUnit_Framework_TestCase
 	public function testEnterParamsReturnTrueSentence($candidate,$count,$sentence){
 		$statObj=new Statistics();
 		$result=$statObj->printGuessStatistics($candidate,$count);
-		$this->assertEquals($result['result'],$sentence);
+		$this->assertEquals($sentence,$result['result']);
 	}
 	
 	public function providerTestEnterParamsReturnTrueSentence()
