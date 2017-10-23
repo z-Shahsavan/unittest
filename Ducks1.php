@@ -29,7 +29,7 @@ interface Fly {
 }
 class DecoyDuck implements CommonBehavior
 {
-    protected static $name="Decoy_Duck";
+    private static $name="Decoy_Duck";
 
     public function getName() {
         return DecoyDuck::$name;
@@ -41,7 +41,7 @@ class DecoyDuck implements CommonBehavior
 }
 class MallardDuck implements CommonBehavior, Fly
 {
-    protected static $name="Mallard_Duck";
+    private static $name="Mallard_Duck";
 
     public function sing() {
         return " says: Quack! Quack!";
@@ -53,7 +53,7 @@ class MallardDuck implements CommonBehavior, Fly
 }
 class RedHeadDuck implements Fly,CommonBehavior
 {
-    protected static $name="Red_head_Duck";
+    private static $name="Red_head_Duck";
 
     public function getName() {
         return RedHeadDuck::$name;
@@ -65,7 +65,7 @@ class RedHeadDuck implements Fly,CommonBehavior
 }
 class RubberDuck implements CommonBehavior
 {
-    protected static $name="Rubber_Duck";
+    private static $name="Rubber_Duck";
 
     public function sing() {
         return " says: Squeak!";
